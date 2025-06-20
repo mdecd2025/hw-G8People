@@ -143,7 +143,37 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">W3 << <a href='W3.html'>Previous</a> <a href='W6.html'>Next</a> >> W6<br /><h1>W5</h1>
-<br />W3 << <a href='W3.html'>Previous</a> <a href='W6.html'>Next</a> >> W6</div>
+<p>Q1：什麼是Webots?</p>
+<p>Webots是一款專業的移動機器人模擬軟件，提供了3D虛擬環境，支持物理屬性設計，並且可創建不同類型的機器人(輪式、腿式、飛行)，並添加傳感器和執行器。支持單獨編程機器人以實現特定行為，提供大量模型和示例。模擬成功後，可以將程序轉移至真實的機器人，支持擴展新接口。</p>
+<p>Q2：我可以用Webots做什麼?</p>
+<p>應用領域：適用在移動機器人原型設計、運動研究、多代理系統、適應行為研究。</p>
+<p>行業範圍：涵蓋學術、汽車、航空、吸塵器、玩具等行業。</p>
+<p>教育用途：支持機器人學和編程教學（C/C++/Java/Python）</p>
+<p>競賽：可用於機器人比賽。</p>
+<p><span>Q3：要使用Webots，我需要知道什麼?</span></p>
+<ol>
+<li>程式語言知識 ：需具備<span>C、C++、Java、Python或MATLAB</span>的基本知識來撰寫機器人控制器。若不熟悉語言可使用<span>簡單圖形化程式語言BotStudio編程</span>(適用於e-puck和Hemisson機器人)</li>
+<li>3D模型創建：需了解<span>3D電腦圖形</span>和<span>VRML97</span>描述語言。</li>
+</ol>
+<p>Q4：什麼是世界?</p>
+<ul>
+<li>世界定義：描述3D涵蓋機器人及其環境的所有屬性(如位置、方向、幾何、外觀、物理屬性等)</li>
+<li>層次結構：物件以層次方式組織，可包含其他物件(輪子、感測器、關節等)</li>
+<li>功能與限制：(.wbt)不含控制器程示碼，只指定每個機器人所需的控制器名稱。</li>
+<li>儲存位置：檔案以".wbt"格式儲存，位於Webots專案的"worlds"子目錄</li>
+</ul>
+<p>Q5：什麼是控制器?</p>
+<ol>
+<li>控制器定義：控制器是用來控制world檔案中機器人的電腦程式</li>
+<li>運行機制：模擬開始時，Webots為每個機器人啟動獨立的控制進程，多個機器人可共用同一程式碼，但每個機器人有獨立進程。</li>
+<li>儲存位置：控制器檔案儲存在專案的"controllers"子目錄</li>
+</ol>
+<p>這是Webots中控制器的<span>核心概念</span>，<span>強調其獨立性與語言支援的多樣性</span>。</p>
+<p>Q6：什麼是監督控制器?</p>
+<ol>
+<li>監督控制器定義：當機器人的<span>supervisor欄位設為TURE，控制器成為監督控制器。能執行人類操作員的任務，而非真實機器人能完成的動作。</span></li>
+<li><span>特權操作：與一般控制器不同，監督控制器擁有特權功能，包括模擬控制，如隨機移動機器人、錄製模擬影片等。</span></li>
+</ol><br />W3 << <a href='W3.html'>Previous</a> <a href='W6.html'>Next</a> >> W6</div>
         
     <!-- footer -->
       <div class="container">
